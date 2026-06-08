@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLeetcode } from "@fortawesome/free-brands-svg-icons";
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -208,10 +211,11 @@ export const socialMedia = [
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/wha.svg",
   },
   {
     id: 3,
     img: "/link.svg",
   },
+ { id: 4, img: "/insta.svg" },
 ];
