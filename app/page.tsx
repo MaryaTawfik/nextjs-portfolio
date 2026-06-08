@@ -2,6 +2,13 @@ import Hero from "@/components/Hero";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import { FaHome } from "react-icons/fa";
 import Grid  from "@/components/Grid";
+// import Recentpro from "@/components/Recentprojects";
+import Recentprojects from "@/components/Recentprojects";
+import { navItems } from "@/data";
+import Clients from "@/components/Clients";
+import Experience from "@/components/Experience";
+import Approch from "@/components/Approch"
+import Footer from "@/components/footer"
 export default function Home() {
   return (
     <main
@@ -10,13 +17,16 @@ export default function Home() {
     >
       <div className="max-w-7xl w-full">
         <FloatingNav
-          navItems={[
-            { name: "Home", link: "/", icon: <FaHome /> },
-            { name: "About", link: "/about" },
-          ]}
+          navItems={navItems}
         />
         <Hero />
         <Grid />
+        
+        <Recentprojects />
+        <Clients/>
+        <Experience/>
+        <Approch/>
+        <Footer/>
       </div>
     </main>
   );
